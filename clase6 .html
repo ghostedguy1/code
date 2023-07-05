@@ -1,0 +1,54 @@
+<head>
+    <title>Ejemplo Box Model con Media Queries</title>
+    <style>
+      /* Estilos para los divs */
+      .container {
+        width: 400px;
+        height: 400px;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 40px auto;
+        text-align: center;
+      }
+  
+      .inner-div {
+        width: 300px;
+        height: 300px;
+        border: 2px solid red;
+        padding: 20px;
+        margin: 40px auto;
+        text-align: center;
+      }
+  
+      .nested-div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid blue;
+        padding: 20px;
+        margin: 40px auto;
+        text-align: center;
+      }
+  
+      /* Media queries para cambiar el color de fondo */
+      @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+  
+      @media (max-width: 400px) {
+        body {
+          background-color: lightgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-div">
+        <div class="nested-div">
+          Contenido del div más interno
+        </div>
+      </div>
+    </div>
+  </body>
